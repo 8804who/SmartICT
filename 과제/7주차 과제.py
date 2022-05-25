@@ -3,7 +3,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 
 #가
-data=pd.read_csv('D:/공부/비교과/USG/코딩엑스AI코스/실습/data/Student_Performance.csv')
+data=pd.read_csv('/data/Student_Performance.csv')
 
 #나
 X=data[['math', 'reading', 'writing']]
