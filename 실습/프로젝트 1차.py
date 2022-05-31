@@ -65,7 +65,6 @@ print(10**log_rate_best.sum())
 
 yhat = knn.predict(xtest)
 log_rate_knn = np.log10((data_test['Today']+100)/100)
-print(log_rate_knn)
 log_rate_knn[ yhat=='Down' ] = 0
 print(10**log_rate_knn.sum())
 
