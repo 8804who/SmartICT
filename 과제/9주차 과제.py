@@ -27,7 +27,6 @@ model_rf=RandomForestClassifier()
 grid_search=GridSearchCV(estimator=model_rf, param_grid=param_grid, scoring='accuracy')
 grid_search.fit(X_sampled, y_sampled)
 
-
 #마
 y_pred = grid_search.predict(X_test)
 print("F1-Score:", f1_score(y_test, y_pred))
